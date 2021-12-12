@@ -24,7 +24,7 @@
 
 **IoC 컨테이너, DI 컨테이너 : 의존관계 주입 (Dependency Injection)**
 
-AppConfig처럼 객체를 생성하고 관리하면서 의존관계를 연결해주는 것을 **IoC 컨테이너 or DI 컨테이너** 라고 한다.AppConfig처럼 객체를 생성하고 관리하면서 의존관계를 연결해주는 것을 **IoC 컨테이너 or DI 컨테이너** 라고 한다.
+AppConfig처럼 객체를 생성하고 관리하면서 의존관계를 연결해주는 것을 **IoC 컨테이너 or DI 컨테이너** 라고 한다.
 
 ---
 
@@ -46,3 +46,12 @@ AppConfig처럼 객체를 생성하고 관리하면서 의존관계를 연결해
          이벤트를 발행하고 구독하는 모델을 편리하게 지원
       4. ResourceLoader
          파일, 클래스 패스, 외부 등에서 리소스를 편리하게 조회
+
+---
+
+**스프링 빈 설정 메타 정보 - BeanDefinition**
+
+`AnnotationConfigApplicationContext`는 `AnnotatedBeanDefinitionReader`를 사용해서
+`@Configuration` 어노테이션이 있는 AppConfig 클래스 `AppConfig.class`에서 Bean의 메타정보를 읽고 `BeanDefinition`을 생성한다.
+
+ 
